@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{3BD7AA19-56ED-4294-A5FB-0EE23C4D8993}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>KeyLog</RootNamespace>
-    <AssemblyName>KeyLog</AssemblyName>
+    <RootNamespace>Keylog</RootNamespace>
+    <AssemblyName>Keylog</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -64,6 +64,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
