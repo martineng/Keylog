@@ -1,0 +1,3 @@
+## Ignore Visual Studio db files that deny 'git add .'
+
+.vs/
