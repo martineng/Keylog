@@ -8,3 +8,6 @@ D:\Projects\KeyLog\KeyLog\obj\Debug\KeyLog.csproj.GenerateResource.cache
 D:\Projects\KeyLog\KeyLog\obj\Debug\KeyLog.csproj.CoreCompileInputs.cache
 D:\Projects\KeyLog\KeyLog\obj\Debug\KeyLog.exe
 D:\Projects\KeyLog\KeyLog\obj\Debug\KeyLog.pdb
+D:\Projects\KeyLog\KeyLog\bin\Debug\BCrypt.Net-Next.dll
+D:\Projects\KeyLog\KeyLog\bin\Debug\BCrypt.Net-Next.xml
+D:\Projects\KeyLog\KeyLog\obj\Debug\Keylog.csproj.CopyComplete

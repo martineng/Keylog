@@ -38,17 +38,19 @@
             this.txtbUname.MaxLength = 255;
             this.txtbUname.Name = "txtbUname";
             this.txtbUname.Size = new System.Drawing.Size(200, 20);
-            this.txtbUname.TabIndex = 0;
+            this.txtbUname.TabIndex = 1;
+            this.txtbUname.UseSystemPasswordChar = true;
             // 
             // txtboxPwd
             // 
             this.txtboxPwd.Location = new System.Drawing.Point(100, 100);
             this.txtboxPwd.MaxLength = 255;
             this.txtboxPwd.Name = "txtboxPwd";
-            this.txtboxPwd.PasswordChar = '*';
             this.txtboxPwd.ShortcutsEnabled = false;
             this.txtboxPwd.Size = new System.Drawing.Size(200, 20);
             this.txtboxPwd.TabIndex = 2;
+            this.txtboxPwd.UseSystemPasswordChar = true;
+            this.txtboxPwd.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtboxPwd_KeyDown);
             // 
             // FormLogin
             // 
