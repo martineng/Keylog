@@ -104,6 +104,7 @@
             this.Controls.Add(this.menuStrip);
             this.MainMenuStrip = this.menuStrip;
             this.Name = "FormPanel";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormPanel";
             this.menuStrip.ResumeLayout(false);
             this.menuStrip.PerformLayout();

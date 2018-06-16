@@ -33,7 +33,8 @@ namespace KeyLog
                 {
                     this.Hide();
                     Keylog.FormPanel formPanel = new Keylog.FormPanel();
-
+                    formPanel.Closed += (s, arg) => this.Close();
+                    formPanel.Show();
                 }
             }
         }

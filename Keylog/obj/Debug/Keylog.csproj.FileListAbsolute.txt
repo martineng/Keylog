@@ -3,3 +3,12 @@ D:\Projects\KeyLog\KeyLog\obj\Debug\Keylog.FormPanel.resources
 D:\Projects\KeyLog\KeyLog\obj\Debug\Keylog.Properties.Resources.resources
 D:\Projects\KeyLog\KeyLog\obj\Debug\Keylog.csproj.GenerateResource.cache
 D:\Projects\KeyLog\KeyLog\obj\Debug\Keylog.csproj.CoreCompileInputs.cache
+D:\Projects\KeyLog\KeyLog\bin\Debug\Keylog.exe.config
+D:\Projects\KeyLog\KeyLog\bin\Debug\Keylog.exe
+D:\Projects\KeyLog\KeyLog\bin\Debug\Keylog.pdb
+D:\Projects\KeyLog\KeyLog\bin\Debug\BCrypt.Net-Next.dll
+D:\Projects\KeyLog\KeyLog\bin\Debug\BCrypt.Net-Next.xml
+D:\Projects\KeyLog\KeyLog\obj\Debug\Keylog.csprojAssemblyReference.cache
+D:\Projects\KeyLog\KeyLog\obj\Debug\Keylog.csproj.CopyComplete
+D:\Projects\KeyLog\KeyLog\obj\Debug\Keylog.exe
+D:\Projects\KeyLog\KeyLog\obj\Debug\Keylog.pdb
