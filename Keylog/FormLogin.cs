@@ -17,7 +17,7 @@ namespace KeyLog
         // Test Object
         string uname = "martineng";
         string pwd = "password";
-
+        
         public FormLogin()
         {
             InitializeComponent();
@@ -29,7 +29,12 @@ namespace KeyLog
         {
             if (e.KeyCode == Keys.Enter)
             {
-                loginAuthentication();
+                if (loginAuthentication())
+                {
+                    this.Hide();
+                    Keylog.FormPanel formPanel = new Keylog.FormPanel();
+
+                }
             }
         }
 

@@ -1,0 +1,5 @@
+D:\Projects\KeyLog\KeyLog\obj\Debug\KeyLog.FormLogin.resources
+D:\Projects\KeyLog\KeyLog\obj\Debug\Keylog.FormPanel.resources
+D:\Projects\KeyLog\KeyLog\obj\Debug\Keylog.Properties.Resources.resources
+D:\Projects\KeyLog\KeyLog\obj\Debug\Keylog.csproj.GenerateResource.cache
+D:\Projects\KeyLog\KeyLog\obj\Debug\Keylog.csproj.CoreCompileInputs.cache
