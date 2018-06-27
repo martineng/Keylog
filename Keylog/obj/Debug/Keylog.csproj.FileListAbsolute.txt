@@ -12,3 +12,4 @@ D:\Projects\KeyLog\KeyLog\obj\Debug\Keylog.csprojAssemblyReference.cache
 D:\Projects\KeyLog\KeyLog\obj\Debug\Keylog.csproj.CopyComplete
 D:\Projects\KeyLog\KeyLog\obj\Debug\Keylog.exe
 D:\Projects\KeyLog\KeyLog\obj\Debug\Keylog.pdb
+D:\Projects\KeyLog\KeyLog\obj\Debug\Keylog.FormDatabase.resources

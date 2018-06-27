@@ -22,6 +22,8 @@ namespace KeyLog
         {
             InitializeComponent();
             OnLoad();
+            tboxUname_Leave(this, new EventArgs());
+            tboxPwd_Leave(this, new EventArgs());
         }
 
         // Control to login
@@ -29,13 +31,7 @@ namespace KeyLog
         {
             if (e.KeyCode == Keys.Enter)
             {
-                if (loginAuthentication())
-                {
-                    this.Hide();
-                    Keylog.FormPanel formPanel = new Keylog.FormPanel();
-                    formPanel.Closed += (s, arg) => this.Close();
-                    formPanel.Show();
-                }
+                btnLogin_Click(this, new EventArgs());
             }
         }
 
@@ -52,9 +48,9 @@ namespace KeyLog
         {
             Boolean isMatch = false; // Validate if it's User
 
-            if (BCrypt.Net.BCrypt.Verify(this.txtbUname.Text, uname))
+            if (BCrypt.Net.BCrypt.Verify(this.tboxUname.Text, uname))
             {
-                if (BCrypt.Net.BCrypt.Verify(this.txtboxPwd.Text, pwd))
+                if (BCrypt.Net.BCrypt.Verify(this.tboxPwd.Text, pwd))
                 {
                     isMatch = true;
                     MessageBox.Show("WELCOME");
@@ -73,5 +69,57 @@ namespace KeyLog
 
             return isMatch;
         } // END validateUser()
+
+        // Watermark effect for textboxes
+        private void tboxUname_Enter(object sender, EventArgs e)
+        {
+            if (tboxUname.Text == "Username")
+            {
+                tboxUname.Text = "";
+                tboxUname.ForeColor = SystemColors.WindowText;
+                tboxUname.UseSystemPasswordChar = true;
+            }
+        }
+
+        private void tboxUname_Leave(object sender, EventArgs e)
+        {
+            if (tboxUname.Text.Length == 0)
+            {
+                tboxUname.Text = "Username";
+                tboxUname.ForeColor = SystemColors.GrayText;
+                tboxUname.UseSystemPasswordChar = false;
+            }
+        }
+
+        private void tboxPwd_Enter(object sender, EventArgs e)
+        {
+            if (tboxPwd.Text == "Password")
+            {
+                tboxPwd.Text = "";
+                tboxPwd.ForeColor = SystemColors.WindowText;
+                tboxPwd.UseSystemPasswordChar = true;
+            }
+        }
+
+        private void tboxPwd_Leave(object sender, EventArgs e)
+        {
+            if (tboxPwd.Text.Length == 0)
+            {
+                tboxPwd.Text = "Password";
+                tboxPwd.ForeColor = SystemColors.GrayText;
+                tboxPwd.UseSystemPasswordChar = false;
+            }
+        }
+
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            if (loginAuthentication())
+            {
+                this.Hide();
+                Keylog.FormPanel formPanel = new Keylog.FormPanel();
+                formPanel.Closed += (s, arg) => this.Close();
+                formPanel.Show();
+            }
+        }
     } // END class
 } // END namespace
