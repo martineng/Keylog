@@ -93,6 +93,7 @@
             this.btnConnect.TabIndex = 6;
             this.btnConnect.Text = "Connect";
             this.btnConnect.UseVisualStyleBackColor = true;
+            this.btnConnect.Click += new System.EventHandler(this.btnConnect_Click);
             // 
             // FormDatabase
             // 
@@ -110,6 +111,7 @@
             this.MinimizeBox = false;
             this.Name = "FormDatabase";
             this.ShowIcon = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Database Connection";
             this.ResumeLayout(false);
             this.PerformLayout();

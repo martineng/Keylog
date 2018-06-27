@@ -14,6 +14,8 @@ namespace Keylog
     {
         Record locRecord;
         Record[] records;
+        DatabaseInfo theDatabase;
+        
 
         public FormPanel()
         {
@@ -55,6 +57,17 @@ namespace Keylog
             }
 
             return foundRec;
+        }
+
+        private void connectToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Keylog.FormDatabase formDatabase = new Keylog.FormDatabase();
+            formDatabase.Show();
+
+            formDatabase.FormClosing += (sender1, args) =>
+            {
+                
+            };
         }
 
     } // END CLASS FormPanel
